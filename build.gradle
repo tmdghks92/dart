@@ -39,9 +39,7 @@ dependencies {
 
 test {
 	outputs.dir snippetsDir
-	exclude 'cc/qwer/config/YamlPropertiesTest.java'
-	exclude 'cc/qwer/controller/FileDownloadControllerTest.java'
-	exclude 'cc/qwer/parser/JAXBTest.java'
+	exclude 'cc/qwer/**'
 	useJUnitPlatform()
 }
 
