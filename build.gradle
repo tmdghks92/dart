@@ -39,7 +39,6 @@ dependencies {
 
 test {
 	outputs.dir snippetsDir
-	exclude 'cc/qwer/**'
 	useJUnitPlatform()
 }
 
