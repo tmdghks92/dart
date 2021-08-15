@@ -22,7 +22,7 @@ class FileDownloadControllerTest {
     @Autowired
     YamlProperties yamlProperties;
 
-    @Test
+//    @Test
     void download() throws IOException {
         String FILE_URL = "https://opendart.fss.or.kr/api/corpCode.xml?crtfc_key=" + yamlProperties.getKey();
         URL url = new URL(FILE_URL);
@@ -32,7 +32,7 @@ class FileDownloadControllerTest {
         fileOutputStream.close();
     }
 
-    @Test
+//    @Test
     void unzip() throws IOException {
         Path source = Paths.get("/Users/seunghwanwon/Library/Mobile Documents/com~apple~CloudDocs/programing/java/toyProject/qwer/test.zip");
         Path target = Paths.get("/Users/seunghwanwon/Library/Mobile Documents/com~apple~CloudDocs/programing/java/toyProject/qwer/src/main/resources/");

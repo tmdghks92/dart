@@ -12,9 +12,9 @@ class YamlPropertiesTest {
     @Autowired
     YamlProperties yamlProperties;
 
-    @Value("${dart.api.key}")
+//    @Value("${dart.api.key}")
     String key;
-    @Test
+//    @Test
     void test() {
         System.out.println("yamlProperties = " + yamlProperties.getKey());
         assertThat(yamlProperties.getKey()).isEqualTo("1cc8f69874fa8960e94471e0097b2c31353cd167");

@@ -15,3 +15,8 @@ cache:
     - '$HOME/.m2/repository'
     - '$HOME/.gradle'
   script: "./gradlew clean build"
+
+# 배포 #
+deploy:
+  provider: script
+  script:
