@@ -13,7 +13,7 @@ import java.util.List;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class JAXBTest {
-//    @Test
+    @Test
     void jaxb() throws JAXBException {
         JAXBContext jaxbContext = JAXBContext.newInstance(Test1.class);
         Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
