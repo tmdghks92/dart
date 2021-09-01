@@ -8,10 +8,12 @@ pipeline {
                     echo "Multiline shell steps works too"
                     ls -lah
                 '''
-                timeout(time: 3, unit: 'MINUTES') {
-                    retry(5) {
-                        sh './test.sh'
-                    }
+            }
+        }
+        stage('Deploy') {
+            steps {
+                retry(3) {
+                    sh './test.sh'
                 }
             }
         }
